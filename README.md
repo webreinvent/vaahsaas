@@ -1,5 +1,6 @@
-# vaahcms-ready
-> VaahCms Pre-configured and ready to install
+# VaahSaaS
+> VaahSaaS: Laravel multi-database tenancy based SAAS CMS - Pre-Configured & Ready to Use.
+
 
 Please consider starring the project to show your :heart: and support.
 
@@ -197,6 +198,13 @@ After this if you visit any subdomain it will show SSL error, to resolve it we n
 - Add `A` record to domain as per the instruction. On next page it will show all there SSL Certificate strings.
 - Login `CPanel >> SSL/TLS >> Manage SSL sites >> Install an SSL Website` and choose `*.yourdomain.com` and enter SSL Certificate string to respective section and save.
 - Now try to visit any sub domain all of them should be working.
+- Before deploying VaahSaas, create a folder `vaahsaas` and move all files and folder in that except `public`
+- Rename `public` folder to `public_html` and change the content to following:
+```php
+require __DIR__.'/../vaahsaas/vendor/autoload.php';
+$app = require_once __DIR__.'/../vaahsaas/bootstrap/app.php';
+```
+- So in root folder you will have two folder `vaahsaas` and `public_html` which can been deployed to the `root` of cpanel
 
  
 
