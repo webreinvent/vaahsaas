@@ -3,6 +3,12 @@
 /node_modules
 /public/hot
 /public/storage
+/public/vendor
+/VaahCms/Modules/Cms
+/VaahCms/Themes/BtFourPointThree
+/storage/framework/sessions
+/storage/framework/views
+/storage/framework/cache
 /storage/*.key
 /vendor
 .env

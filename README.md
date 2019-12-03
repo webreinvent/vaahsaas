@@ -26,6 +26,13 @@ Publish VaahCms Assets:
 php artisan vendor:publish --provider="WebReinvent\VaahCms\VaahCmsServiceProvider" --tag=assets
 ```
 
+#### Step:
+`php artisan tenancy:install`, this will register necessary `ServiceProviders`, `migrations` and public `tenancy.php` configuration files
+
+#### Step:
+Open `tenancy.php` and update the `exempt_domains`, if you are using localhost, make sure you configure VirtualHost
+
+
 #### Step 4:
 Then visit following url to setup the CMS:
 ```bash
